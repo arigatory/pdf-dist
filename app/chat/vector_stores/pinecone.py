@@ -14,8 +14,6 @@ vector_store = Pinecone.from_existing_index(
     embeddings
 )
 
-# vector_store.as_retriever()
-
 
 def build_retriever(chat_args):
     search_kwargs = {"filter": {"pdf_id": chat_args.pdf_id}}
